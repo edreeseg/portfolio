@@ -7,20 +7,18 @@ const database = {
     age: 24,
     phone: '',
     nationality: 'American',
-    language: 'English, French',
+    language: 'English, Portugues, Spanish',
     email: '',
-    address: '121 King Street, Melbourne, Australia',
+    address: '69 Fernwood Ave, Revere, MA, 02151',
     freelanceStatus: 'Available',
     socialLinks: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
-      pinterest: '',
-      behance: '',
-      linkedin: '',
-      dribbble: '',
-      github: 'https://github.com'
+      facebook: 'https://www.facebook.com/allan.oliveira.1257',
+      twitter: 'https://twitter.com/allanoliveira17',
+      linkedin: 'https://www.linkedin.com/in/allanoliveiradev/',
+      dribbble: 'https://dribbble.com/allandev',
+      github: 'https://github.com/allan-io'
     },
-    brandImage: '/images/brand-image.jpg',
+    brandImage: '/images/brand-image.jpeg',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: '/files/empty.pdf'
@@ -70,28 +68,45 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
-      value: 95
-    },
-    {
-      title: "CSS3",
+      title: "Javascript",
       value: 90
     },
     {
-      title: "Javascript",
-      value: 70
-    },
-    {
-      title: "jQuery",
+      title: "CSS3",
       value: 85
     },
     {
-      title: "ReactJS",
-      value: 80
+      title: "HTML5",
+      value: 90
     },
     {
-      title: "Photoshop",
+      title: "MongoDB",
+      value: 75
+    },
+    {
+      title: "ReactJS",
+      value: 85
+    },
+    {
+      title: "ExpressJS",
+      value: 80
+    },
+
+    {
+      title: "NodeJS",
+      value: 75
+    },
+    {
+      title: "Mongoose",
+      value: 70
+    },
+    {
+      title: "Ruby on Rails",
       value: 65
+    },
+    {
+      title: "C",
+      value: 70
     }
   ],
   portfolios: [

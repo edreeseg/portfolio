@@ -4,8 +4,12 @@ import Particles from "react-particles-js";
 import Layout from "../components/Layout";
 import Socialicons from "../components/Socialicons";
 
+
+
 function Home({lightMode}){
   const [information, setInformation] = useState("");
+
+  // configuration for react-particles-js primary (dark-mode)
   const paramConfig = {
     particles: {
       number: {
@@ -40,6 +44,7 @@ function Home({lightMode}){
     }
   };
 
+  // config light mode
   const paramConfigLight = {
     particles: {
       number: {
@@ -73,12 +78,15 @@ function Home({lightMode}){
       }
     }
   };
-  useEffect(() =>{
-    axios.get('/api/information')
+
+  useEffect(() => {
+     axios.get('/api/information')
     .then( response => {
       setInformation(response.data);
     })
   }, [])
+
+
   return (
     <Layout>
       <div className="mi-home-area mi-padding-section">
