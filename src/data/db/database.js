@@ -4,9 +4,9 @@ const database = {
   information: {
     name: 'Allan Oliveira',
     aboutContent: "I am a full stack web developer. I can provide clean code using the latest technologies. Feel free to check out all my previous projects",
-    age: 34,
+    age: Math.abs((new Date(Date.now() - new Date('1986-03-17').getTime())).getFullYear() - 1970),
     phone: '+1 781-363-7337',
-    nationality: 'American',
+    nationality: 'Brazilian-American',
     language: 'English, Portuguese, Spanish',
     email: 'allanoliveira.dev@gmail.com',
     address: 'Boston, MA',
