@@ -4,12 +4,12 @@ const database = {
   information: {
     name: 'Allan Oliveira',
     aboutContent: "I am a full stack web developer. I can provide clean code using the latest technologies. Feel free to check out all my previous projects",
-    age: 24,
-    phone: '',
+    age: 34,
+    phone: '+1 781-363-7337',
     nationality: 'American',
-    language: 'English, Portugues, Spanish',
-    email: '',
-    address: '69 Fernwood Ave, Revere, MA, 02151',
+    language: 'English, Portuguese, Spanish',
+    email: 'allanoliveira.dev@gmail.com',
+    address: 'Boston, MA',
     freelanceStatus: 'Available',
     socialLinks: {
       facebook: 'https://www.facebook.com/allan.oliveira.1257',
