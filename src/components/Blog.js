@@ -2,13 +2,17 @@ import React from "react";
 import ProgressiveImage from 'react-progressive-image';
 import { Link } from "react-router-dom";
 
+
+
 function Blog(props) {
   const { id, featuredImage, title, createDay, createMonth, filesource } = props.data;
+  console.log(props.data)
+
   const getShortMonth = month => {
     return month.slice(0, 3);
   };
   const getNospaceTitle = filesource => {
-    let tempArr = filesource.split('/');
+    let tempArr = filesource.split('/'); 
     let fileName = tempArr[tempArr.length - 1];
     let getName = fileName.slice(0, -3);
     return getName;

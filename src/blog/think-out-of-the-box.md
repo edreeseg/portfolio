@@ -1,4 +1,4 @@
-![Think out of the box](/images/blog-image-9.jpg)
+![Think out of the box](https://res.cloudinary.com/allandev/image/upload/v1611887053/results_cxucci.jpg)
 
 ### Think out of the box.
 

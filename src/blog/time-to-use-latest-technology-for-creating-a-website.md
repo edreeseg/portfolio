@@ -1,4 +1,4 @@
-![Time to use latest technology for creating a website](/images/blog-image-8.jpg)
+![Time to use latest technology for creating a website](https://res.cloudinary.com/allandev/image/upload/v1611886928/it-works_xz6x3r.jpg)
 
 ### Time to use latest technology for creating a website.
 

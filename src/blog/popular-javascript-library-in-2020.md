@@ -1,4 +1,4 @@
-![Popular javascript library in 2020](/images/blog-image-5.jpg)
+![Popular javascript library in 2020](https://res.cloudinary.com/allandev/image/upload/c_scale,w_1030/v1611795149/samples/imagecon-group.jpg)
 
 ### Popular javascript library in 2020.
 

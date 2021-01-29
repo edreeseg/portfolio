@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 function Notfound() {
+
   return (
     <Layout>
       <div className="mi-about-area mi-section">
