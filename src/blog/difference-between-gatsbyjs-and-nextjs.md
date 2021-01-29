@@ -1,4 +1,4 @@
-![Difference between GatsbyJS & NextJS](/images/blog-image-5.jpg)
+![Difference between GatsbyJS & NextJS](https://res.cloudinary.com/allandev/image/upload/v1611887053/results_cxucci.jpg)
 
 ### Difference between GatsbyJS & NextJS.
 

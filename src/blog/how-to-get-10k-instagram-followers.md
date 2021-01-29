@@ -1,4 +1,4 @@
-![How to get 10k instagram followers](/images/blog-image-2.jpg)
+![How to get 10k instagram followers](https://res.cloudinary.com/allandev/image/upload/c_scale,e_art:incognito,r_15,w_2008/v1611886426/homepage4_v7yafy.jpg)
 
 ### How to get 10k instagram followers?
 

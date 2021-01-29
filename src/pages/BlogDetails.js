@@ -4,23 +4,32 @@ import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown/with-html";
 import Layout from "../components/Layout";
 
-function BlogDetails(props) {
-  const [content, setContent] = useState("");
-  const blogId = props.match.params.id;
-  const blogFile = props.match.params.title;
+// this file contains information on one individual blog post finding it ny id
+// this is where each individual disqus comment section is configured
 
+function BlogDetails(props) {
+  const [content, setContent] = useState(""); // content is a blog post in .md
+  const blogId = props.match.params.id; // blogId is a number in sting
+  const blogFile = props.match.params.title; // blogFile is the name-of-the-md-file
+  
   useEffect(() => {
     axios
-      .get(require(`../blog/${blogFile}.md`))
+      .get(require(`../blog/${blogFile}.md`)) // require entire ms page?
       .then(result => {
-        setContent(result.data);
+        setContent(result.data); // the entire md document
       })
+    // axios
+    //   .get('https://allandev-blog.herokuapp.com/articles')
+    //   .then(result => {{
+    //     setContent(result.data[1].body)
+    //   }})
+      
   }, [content, blogFile]);
 
-  const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
+  const disqusShortname = "allandev-com"; //found in your Disqus.com dashboard
   const disqusConfig = {
-    url: "https://tf-react-chester.now.sh/", //Homepage link of this site.
-    identifier: blogId,
+    url: 'https://allandev-com.disqus.com/embed.js', //Homepage link of this site.
+    identifier: blogId, // unique id for disqus
     title: blogFile
   };
 
@@ -28,7 +37,7 @@ function BlogDetails(props) {
     <Layout>
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <ReactMarkdown source={content} escapeHtml={false}></ReactMarkdown>
+          <ReactMarkdown source={content} escapeHtml={false}></ReactMarkdown> 
           <div className="mi-blog-details-comments mt-30">
             <Disqus.DiscussionEmbed
               shortname={disqusShortname}

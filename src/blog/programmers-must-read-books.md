@@ -1,4 +1,4 @@
-![Programmers must read books](/images/blog-image-6.jpg)
+![Programmers must read books](https://res.cloudinary.com/allandev/image/upload/c_scale,e_art:incognito,r_15,w_2008/v1611886426/homepage4_v7yafy.jpg)
 
 ### Programmers must read books.
 

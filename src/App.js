@@ -12,7 +12,17 @@ import Portfolios from "./pages/Portfolios";
 import Resumes from "./pages/Resumes";
 
 function App() {
-  const [lightMode, setLightMode] = useState(false); // Made it true if you want to load your site light mode primary
+
+  // const [articles, setArticles] = useState([])
+
+  // useEffect(() => {
+  //   fetch('https://allandev-blog.herokuapp.com/articles')
+  //     .then(response => response.json())
+  //     .then(data => setArticles(data))
+  // }, [])
+
+
+  const [lightMode, setLightMode] = useState(true); // Made it true if you want to load your site light mode primary
 
   lightMode ? document.body.classList.add('light') : document.body.classList.remove('light');
 

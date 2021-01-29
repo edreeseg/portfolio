@@ -1,4 +1,4 @@
-![How to choose javascript framework for project](/images/blog-image-6.jpg)
+![How to choose javascript framework for project](https://res.cloudinary.com/allandev/image/upload/e_brightness:80/v1611886695/boston_wguvjh.jpg)
 
 ### How to choose javascript framework for project.
 

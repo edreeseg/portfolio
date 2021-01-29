@@ -1,4 +1,4 @@
-![Future of javascript](/images/blog-image-4.jpg)
+![Future of javascript](https://res.cloudinary.com/allandev/image/upload/v1611886928/it-works_xz6x3r.jpg)
 
 ### Future of javascript.
 

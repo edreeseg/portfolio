@@ -1,4 +1,4 @@
-![Boost your post for increasing sales](/images/blog-image-4.jpg)
+![Boost your post for increasing sales](https://res.cloudinary.com/allandev/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1611887681/accountability_xo3uep.jpg)
 
 ### Boost your post for increasing sales.
 
