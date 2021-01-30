@@ -51,7 +51,9 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resumes} />
         <Route path="/portfolios" component={Portfolios} />
+        {/*this path goes to the blog page  */}
         <Route path="/blogs" exact component={Blogs} />
+        {/* this path will route to the BlogDetails Page| update blogdetails to display filesource content */}
         <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
         <Route path="/contact" component={Contact} />
         <Route path="*" component={Notfound} />
