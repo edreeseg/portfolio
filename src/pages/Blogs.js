@@ -16,9 +16,10 @@ function Blogs() {
     let mounted = true;
     axios.get("https://allandev-blog.herokuapp.com/articles").then(response => {
       if(mounted){
-        setPosts(response.data);
+        const sortedData = response.data.sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
+        setPosts(sortedData);
       }
-    });
+    });   
     return () => mounted = false;
   }, []);
 
