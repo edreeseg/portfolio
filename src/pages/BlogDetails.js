@@ -1,4 +1,3 @@
-import axios from "axios";
 import Disqus from "disqus-react";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown/with-html";
@@ -11,19 +10,9 @@ function BlogDetails(props) {
   const [content, setContent] = useState(""); // content is a blog post in .md
   const blogId = props.match.params.id; // blogId is a number in sting
   const blogFile = props.match.params.title; // blogFile is the name-of-the-md-file
-  
+
   useEffect(() => {
-    axios
-      .get(require(`../blog/${blogFile}.md`)) // require entire ms page?
-      .then(result => {
-        setContent(result.data); // the entire md document
-      })
-    // axios
-    //   .get('https://allandev-blog.herokuapp.com/articles')
-    //   .then(result => {{
-    //     setContent(result.data[1].body)
-    //   }})
-      
+    setContent(props.location.state.article.filesource)  
   }, [content, blogFile]);
 
   const disqusShortname = "allandev-com"; //found in your Disqus.com dashboard

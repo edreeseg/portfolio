@@ -31,13 +31,18 @@ function Blogs() {
     setCurrentPage(pageNumber);
   }
 
-  // this layout is returned to the main App.js component  
+  // This is the page that is displayed in url/blogs 
+  // it returns three componets which is displayed when on this PATH 
+  // 1 - Section title which just displays and styles "Recent Blogs"
+  // 2 - BlogsView which is what all the blogs should look like in the page
+  // 3 - Pagination takes care of the pagination logic
   return (
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Recent Blogs" />  
-          <BlogsView blogs={currentPosts} />   {/*this is where the currentBlogs prop is passed down to Blog.js */}
+          {/*this is where the currentBlogs prop is passed down to BlogsView component */}
+          <BlogsView blogs={currentPosts} />   
           {!(posts.length > postsPerPage) ? null : (
             <Pagination
               className="mt-50"
