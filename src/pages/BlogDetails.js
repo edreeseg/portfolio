@@ -13,7 +13,7 @@ function BlogDetails(props) {
 
   useEffect(() => {
     setContent(props.location.state.article.filesource)  
-  }, [content, blogFile]);
+  }, [props.location.state.article.filesource]);
 
   const disqusShortname = "allandev-com"; //found in your Disqus.com dashboard
   const disqusConfig = {
