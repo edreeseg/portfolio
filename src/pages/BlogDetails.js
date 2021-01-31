@@ -12,12 +12,13 @@ function BlogDetails(props) {
   const blogFile = props.match.params.title; // blogFile is the name-of-the-md-file
 
   useEffect(() => {
-    setContent(props.location.state.article.filesource)  
+    console.log(props.match.url)
+    setContent(props.location.state.article.filesource)
+    
   }, [props.location.state.article.filesource]);
 
   const disqusShortname = "allandev-com"; //found in your Disqus.com dashboard
   const disqusConfig = {
-    url: 'https://allandev-com.disqus.com/embed.js', //Homepage link of this site.
     identifier: blogId, // unique id for disqus
     title: blogFile
   };

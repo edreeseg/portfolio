@@ -11,20 +11,17 @@ function Blog(props) {
   const getShortMonth = month => {
     return month.slice(0, 3);
   };
-  const getNospaceTitle = filesource => {
-    let tempArr = filesource.split('/'); 
-    let fileName = tempArr[tempArr.length - 1];
-    let getName = fileName.slice(0, -3);
-    // need to change this 
-    return getName;
+  const getNospaceTitle = title => {
+    return title.split(' ').join('_')
   };
 
-  console.log(featuredImage.formats.small.url)
+  console.log(getNospaceTitle(title))
+
   return (
     <div className="mi-blog">
       <div className="mi-blog-image">
         <Link to={{
-          pathname: `blogs/blog-details/${id}/${getNospaceTitle(filesource)}`,
+          pathname: `blogs/blog-details/${id}/${getNospaceTitle(title)}`,
           state: {
             article: props.data
           }
@@ -48,7 +45,7 @@ function Blog(props) {
       <div className="mi-blog-content">
         <h5>
           {/*need to change the path here*/}
-          <Link to={`blogs/blog-details/${id}/${getNospaceTitle(filesource)}`}>
+          <Link to={`blogs/blog-details/${id}/${getNospaceTitle(title)}`}>
             {title}
           </Link>
         </h5>
