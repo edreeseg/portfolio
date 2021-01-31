@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // It also provides a important link to a path to url/blogs/blog-details/id/name once you click on blog component
 
 function Blog(props) {
-  const { id, featuredImage, title, createDay, createMonth, filesource } = props.data;
+  const { id, featuredImage, title, createDay, createMonth } = props.data;
 
   const getShortMonth = month => {
     return month.slice(0, 3);

@@ -12,7 +12,6 @@ function BlogDetails(props) {
   const blogFile = props.match.params.title; // blogFile is the name-of-the-md-file
 
   useEffect(() => {
-    console.log(props.match.url)
     setContent(props.location.state.article.filesource)
     
   }, [props.location.state.article.filesource]);
