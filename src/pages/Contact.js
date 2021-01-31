@@ -19,6 +19,20 @@ function Contact(){
 
   const submitHandler = (event) =>{
     event.preventDefault();
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        formData: {
+          name: formdata.name,
+          email: formdata.email,
+          subject: formdata.subject,
+          message: formdata.message
+        }
+      })
+    }
+
     if( !formdata.name ){
       setError(true);
       setMessage('Name is required');
@@ -34,7 +48,22 @@ function Contact(){
     } else{
       setError(false);
       setMessage('You message has been sent!!!');
+      setTimeout(() => {
+        setMessage("")
+      }, 6000)
+
+      fetch('https://allandev-blog.herokuapp.com/contacts', requestOptions)
+        .then(() => setFormdata({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        }))
     }
+
+    
+
+    
   }
   const handleChange = (event) => {
     setFormdata({

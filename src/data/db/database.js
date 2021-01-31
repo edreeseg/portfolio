@@ -21,7 +21,7 @@ const database = {
     brandImage: '/images/brand-image.jpeg',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
-    cvfile: '/files/empty.pdf'
+    cvfile: '/files/cv.pdf'
   },
   services: [
     {
@@ -296,7 +296,7 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
+        year: "2020 - Present",
         position: "Frontend Web Developer",
         company: "Abc Company",
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
@@ -305,7 +305,7 @@ const database = {
         id: 2,
         year: "2016 - 2018",
         position: "Frontend Web Developer",
-        company: "CBA Company",
+        company: "CBA Company (6 months)",
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
       },
       {
@@ -478,12 +478,11 @@ const database = {
     }
   ],
   contactInfo: {
-    phoneNumbers: ['+012-3456-7891', '+012-3456-7892'],
-    emailAddress: ['admin.sitename@example.com', 'info.sitename@example.com'],
-    address: "121 King Street, Melbourne, Victoria 3000, Australia"
+    phoneNumbers: ['+1 781-363-7337'],
+    emailAddress: ['info@allandev.com'],
+    address: "69 Fernwood Ave, Revere, MA 02151, United States"
   }
 }
-
 
 Mock.onGet("/api/information").reply(config => {
   const response = database.information;
