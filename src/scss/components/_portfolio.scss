@@ -26,8 +26,6 @@
     }
   }
 
-    
-
     &::before {
       content: '';
       font-size: 90px;
@@ -62,10 +60,15 @@
       margin-top: 30px;
       transition: all 0.4s ease-in-out 0.2s;
 
-      h3 {
+      .iconsWrapper {
+        h5 {
+          color: $color-theme;
+        }
+      }
+
+      .iconStyles {
         color: $color-bg-body;
         cursor: pointer;
-        font-weight: 600;
         transition: .3s;
 
         &:hover {
@@ -96,23 +99,20 @@
       }
     }
   }
+  .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  h6 {
-    color: $color-body;
-    margin-bottom: 0;
+    :last-child {
+      margin-right: 1em;
+    }
+
+    h6 {
+      color: $color-body;
+      margin-bottom: 0;
+    }
   }
-
-  // &:hover &-image {
-  //   &::before {
-  //     transform: scaleX(1);
-  //   }
-
-  //   ul {
-  //     visibility: visible;
-  //     opacity: 1;
-  //     margin-top: 0;
-  //   }
-  // }
 
   &.mi-portfolio-visible {
     visibility: visible;

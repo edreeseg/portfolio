@@ -1,4 +1,7 @@
 import Mock from "../mock";
+import React from 'react'
+import { FaReact, FaNodeJs } from 'react-icons/fa'
+import { SiJavascript } from 'react-icons/si'
 
 const database = {
   information: {
@@ -117,7 +120,15 @@ const database = {
       imageUrl: "/images/movie-search.png",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://allan-movie-searcher.netlify.app/',
-      content: ['codepen', 'react']
+      github: "https://github.com/allan-io/movie-searcher",
+      getIcons() {
+        return (
+          <div>
+            <FaReact className={'iconStyles'} size={'2em'}/>
+            <FaNodeJs className={'iconStyles'} size={'2em'} />
+          </div>
+        )
+      }
     },
     {
       id: 2,
@@ -129,15 +140,14 @@ const database = {
         "/images/portfolio-image-4-lg2.jpg"
       ],
       url: 'https://facebook.com',
-      content: ['sunshine']
-    },
-    {
-      id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 4,
@@ -145,8 +155,15 @@ const database = {
       subtitle: "A pen holder with beautiful design.",
       imageUrl: "/images/portfolio-image-3.jpg",
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#',
-      content: []
+      url: 'https://facebook.com',
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 5,
@@ -154,7 +171,15 @@ const database = {
       subtitle: "Mug with awesome style",
       imageUrl: "/images/portfolio-image-5.jpg",
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 6,
@@ -162,7 +187,15 @@ const database = {
       subtitle: "Free pendrive mockup design.",
       imageUrl: "/images/portfolio-image-6.jpg",
       largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 7,
@@ -171,7 +204,14 @@ const database = {
       imageUrl: "/images/portfolio-image-7.jpg",
       largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
       url: 'https://twitter.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 8,
@@ -179,7 +219,15 @@ const database = {
       subtitle: "Clip sticker mockup design.",
       imageUrl: "/images/portfolio-image-8.jpg",
       largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 9,
@@ -187,7 +235,15 @@ const database = {
       subtitle: "Beautiful packet & product design.",
       imageUrl: "/images/portfolio-image-9.jpg",
       largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 10,
@@ -196,7 +252,14 @@ const database = {
       imageUrl: "/images/portfolio-image-3.jpg",
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
       url: '#',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 11,
@@ -208,7 +271,14 @@ const database = {
         "/images/portfolio-image-4-lg2.jpg"
       ],
       url: 'https://facebook.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 12,
@@ -216,7 +286,14 @@ const database = {
       subtitle: "Beautiful mug with logo.",
       imageUrl: "/images/portfolio-image-2.jpg",
       url: 'https://pinterest.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 13,
@@ -225,7 +302,14 @@ const database = {
       imageUrl: "/images/portfolio-image-1.jpg",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://dribbble.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 14,
@@ -233,7 +317,15 @@ const database = {
       subtitle: "Mug with awesome style",
       imageUrl: "/images/portfolio-image-5.jpg",
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 15,
@@ -241,7 +333,15 @@ const database = {
       subtitle: "Free pendrive mockup design.",
       imageUrl: "/images/portfolio-image-6.jpg",
       largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 16,
@@ -250,7 +350,14 @@ const database = {
       imageUrl: "/images/portfolio-image-7.jpg",
       largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
       url: 'https://twitter.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 17,
@@ -258,7 +365,15 @@ const database = {
       subtitle: "Clip sticker mockup design.",
       imageUrl: "/images/portfolio-image-8.jpg",
       largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 18,
@@ -266,7 +381,15 @@ const database = {
       subtitle: "Beautiful packet & product design.",
       imageUrl: "/images/portfolio-image-9.jpg",
       largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 19,
@@ -275,7 +398,14 @@ const database = {
       imageUrl: "/images/portfolio-image-1.jpg",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://dribbble.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 20,
@@ -287,7 +417,14 @@ const database = {
         "/images/portfolio-image-4-lg2.jpg"
       ],
       url: 'https://facebook.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 21,
@@ -295,7 +432,14 @@ const database = {
       subtitle: "Beautiful mug with logo.",
       imageUrl: "/images/portfolio-image-2.jpg",
       url: 'https://pinterest.com',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 22,
@@ -304,7 +448,14 @@ const database = {
       imageUrl: "/images/portfolio-image-3.jpg",
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
       url: '#',
-      content: []
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     },
     {
       id: 23,
@@ -312,7 +463,15 @@ const database = {
       subtitle: "Mug with awesome style",
       imageUrl: "/images/portfolio-image-5.jpg",
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-      content: []
+      url: "#",
+      github: "#",
+      getIcons() {
+        return (
+          <div>
+            <SiJavascript className={'iconStyles'} size={'2em'}/>
+          </div>
+        )
+      }
     }
   ],
   experience: {

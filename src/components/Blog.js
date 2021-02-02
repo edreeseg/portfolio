@@ -15,8 +15,6 @@ function Blog(props) {
     return title.split(' ').join('_')
   };
 
-  console.log(getNospaceTitle(title))
-
   return (
     <div className="mi-blog">
       <div className="mi-blog-image">

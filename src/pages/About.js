@@ -39,9 +39,7 @@ function About() {
   };
 
   const handleToggler = (event) => {
-    setToggler({
-      toggler: !toggler,
-    });
+    setToggler(!toggler);
   };
 
   useEffect(() => {
@@ -76,6 +74,7 @@ function About() {
                 <FsLightbox
                   toggler={toggler}
                   sources={[information.aboutImageLg]}
+                  onClick={() => handleToggler(!toggler)}
                 />
               </div>
             </div>

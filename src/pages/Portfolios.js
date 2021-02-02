@@ -15,7 +15,6 @@ function Portfolios() {
     axios.get("/api/portfolios").then((response) => {
       if(mounted){
         setPortfoios(response.data);
-        // console.log(response.data[0].content)
       }
     });
     return () => mounted = false;
@@ -37,7 +36,7 @@ function Portfolios() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Portfolios" />
+          <Sectiontitle title="Projects" />
           {<PortfoliosView portfolios={currentPortfolios} />}
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination
