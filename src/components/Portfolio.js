@@ -1,12 +1,10 @@
 import FsLightbox from "fslightbox-react";
 import React, { useState } from "react";
-import * as Icon from "react-feather";
 import ProgressiveImage from 'react-progressive-image';
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const { title, subtitle, imageUrl, largeImageUrl, url } = props.content;
-
+  const { title, subtitle, imageUrl, largeImageUrl, url, content } = props.content;
   const handleToggler = (value) => {
     setToggler(value);
   }
@@ -17,21 +15,22 @@ function Portfolio(props) {
         {/* <img src={imageUrl} alt={title} /> */}
         <ProgressiveImage
           src={imageUrl}
-          placeholder="/images/portfolio-image-placeholder.png"
+          // placeholder="/images/portfolio-image-placeholder.png"
         >
           {src => <img src={src} alt={title} />}
         </ProgressiveImage>
         <ul>
+      
           {!largeImageUrl ? null : <li>
-            <button onClick={() => handleToggler(!toggler)}>
-              <Icon.ZoomIn />
-            </button>
+
+            {content.map(icon => <h3 onClick={() => handleToggler(!toggler)} key={Math.random()}>{icon}</h3>)}
+
           </li>}
-          {url ? <li>
+          {/* {url ? <li>
             <a rel="noopener noreferrer" target="_blank" href={url}>
               <Icon.Link />
             </a>
-          </li> : null}
+          </li> : null} */}
         </ul>
       </div>
       {!url ? <h5>{title}</h5> : <h5>

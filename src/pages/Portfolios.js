@@ -15,6 +15,7 @@ function Portfolios() {
     axios.get("/api/portfolios").then((response) => {
       if(mounted){
         setPortfoios(response.data);
+        // console.log(response.data[0].content)
       }
     });
     return () => mounted = false;
