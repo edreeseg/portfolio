@@ -121,7 +121,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://allan-movie-searcher.netlify.app/',
       github: "https://github.com/allan-io/movie-searcher",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <FaReact className={'iconStyles'} size={'2em'}/>
@@ -141,7 +141,7 @@ const database = {
       ],
       url: 'https://facebook.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -157,7 +157,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
       url: 'https://facebook.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -173,7 +173,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -189,7 +189,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -205,7 +205,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
       url: 'https://twitter.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -221,7 +221,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -237,7 +237,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -253,7 +253,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
       url: '#',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -272,7 +272,7 @@ const database = {
       ],
       url: 'https://facebook.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -287,7 +287,7 @@ const database = {
       imageUrl: "/images/portfolio-image-2.jpg",
       url: 'https://pinterest.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -303,7 +303,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://dribbble.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -319,7 +319,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -335,7 +335,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -351,7 +351,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
       url: 'https://twitter.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -367,7 +367,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -383,7 +383,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -399,7 +399,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://dribbble.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -418,7 +418,7 @@ const database = {
       ],
       url: 'https://facebook.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -433,7 +433,7 @@ const database = {
       imageUrl: "/images/portfolio-image-2.jpg",
       url: 'https://pinterest.com',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -449,7 +449,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
       url: '#',
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
@@ -465,7 +465,7 @@ const database = {
       largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
       url: "#",
       github: "#",
-      getIcons() {
+      getIcons: function() {
         return (
           <div>
             <SiJavascript className={'iconStyles'} size={'2em'}/>
