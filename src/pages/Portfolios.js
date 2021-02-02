@@ -4,21 +4,23 @@ import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
+import projects from '../data/projects';
 
 function Portfolios() {
-  const [portfolios, setPortfoios] = useState([]);
+  const [portfolios, setPortfoios] = useState(projects);
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
 
-  useEffect(() => {
-    let mounted = true;
-    axios.get("/api/portfolios").then((response) => {
-      if(mounted){
-        setPortfoios(response.data);
-      }
-    });
-    return () => mounted = false;
-  }, [portfolios]);
+  // useEffect(() => {
+  //   let mounted = true;
+  //   axios.get("/api/portfolios").then((response) => {
+  //     if(mounted){
+  //       console.log("DATA: ", response.data);
+  //       // setPortfoios(response.data);
+  //     }
+  //   });
+  //   return () => mounted = false;
+  // }, []);
 
   const indexOfLastPortfolios = currentPage * portfoliosPerPage;
   const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage;
