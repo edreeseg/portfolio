@@ -43,10 +43,10 @@ const database = {
   reviews: [
     {
       id: 1,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
+      content: "Allan is extremely team friendly, I really enjoyed working with him on our online bank application. Expect nothing less than full commitment from this guy.",
       author: {
-        name: 'Burdette Turner',
-        designation: 'Web Developer, Abc Company'
+        name: 'Bruno Paula',
+        designation: 'Bank One Project'
       }
     },
     {
